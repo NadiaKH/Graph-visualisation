@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        token: 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
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
