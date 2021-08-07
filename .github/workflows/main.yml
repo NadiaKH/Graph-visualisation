@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - '*.py'
+    branches:
+      - main
+      - develop
 
 jobs:
   flake8_py3:
