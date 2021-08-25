@@ -1,4 +1,5 @@
 import structures
+from draw import generate_gif
 
 graph1 = {1: [2, 4, 5],
           2: [1, 3],
@@ -128,10 +129,11 @@ class DFS:
 
 
 if __name__ == '__main__':
-    edges = [x for x in DFS(1, graph2)]
+    edges = [x for x in DFS(1, graph1)]
     traverse = [edge[1] for edge in edges]
     print(edges)
     print(traverse)
+    generate_gif(graph1, edges)
 
     #s = structures.Stack(10)
     #s.push(1)
